@@ -1,0 +1,8 @@
+.input-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-input {
+  background-color: #f7ede2;
+}

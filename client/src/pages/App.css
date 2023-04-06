@@ -1,0 +1,29 @@
+.main-container {
+  width: 80%;
+  margin: auto auto;
+}
+
+.landing-section {
+  text-align: center;
+  margin: 15% 0 0 0;
+}
+
+.input-section {
+  width: 50%;
+  margin: 50px auto 0 auto;
+}
+
+.data {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 auto 0 auto;
+}
+
+.stats {
+  margin: 30px 0;
+}
+
+.video {
+  /* width: 70%; */
+  margin: 0 auto;
+}

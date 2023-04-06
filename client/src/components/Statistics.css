@@ -1,0 +1,13 @@
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.result {
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  margin: 0px 20px;
+  position: relative;
+}
