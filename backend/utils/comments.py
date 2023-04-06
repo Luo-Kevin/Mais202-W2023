@@ -11,6 +11,7 @@ from dotenv import dotenv_values
 
 YOUTUBE_API_KEY = dotenv_values(".env")["YOUTUBE_API_KEY"]
 
+
 def get_comments(id):
     # Disable OAuthlib's HTTPS verification when running locally.
     # *DO NOT* leave this option enabled in production.
@@ -21,12 +22,12 @@ def get_comments(id):
     DEVELOPER_KEY = YOUTUBE_API_KEY
 
     youtube = googleapiclient.discovery.build(
-        api_service_name, api_version, developerKey = DEVELOPER_KEY)
+        api_service_name, api_version, developerKey=DEVELOPER_KEY)
 
     request = youtube.commentThreads().list(
         part="snippet",
         videoId=id,
-        maxResults=20,
+        maxResults=30,
         order="relevance"
 
     )
@@ -34,4 +35,3 @@ def get_comments(id):
     response = request.execute()
 
     return response['items']
-
